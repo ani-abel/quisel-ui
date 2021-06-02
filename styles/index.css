@@ -1,0 +1,56 @@
+@import url("./base.css");
+main {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  grid-row-gap: 30px;
+  grid-auto-flow: row;
+}
+
+main .icon-section:first-of-type {
+  margin-top: 120px;
+}
+
+main .icon-section:first-of-type img {
+  width: 150px;
+  height: 150px;
+}
+
+.loader {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  bottom: 50px;
+  left: 0;
+}
+
+.loader ul li {
+  list-style: none;
+  display: inline;
+  padding: 8px;
+}
+
+.loader ul li div {
+  display: inline-block;
+  background: #2B303A;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.loader ul li:nth-of-type(even) div {
+  background: #06D6A0;
+}
+
+@media (max-width: 576px) {
+  main .icon-section:first-of-type img {
+    width: 130px;
+    height: 130px;
+  }
+  .loader ul li div {
+    width: 10px;
+    height: 10px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
