@@ -1,0 +1,134 @@
+@import url("./base.css");
+.container {
+  width: 100%;
+  padding: 30px 20px;
+}
+
+.container header {
+  font-size: var(--heading-font-size);
+}
+
+.container header form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container header form label {
+  --font-size: 30px;
+  font-size: var(--font-size);
+}
+
+.container header form .form-control {
+  height: 45px;
+}
+
+.container main {
+  padding: 10px 0 20px 0;
+}
+
+.container main h2 {
+  --font-size: 30px;
+  font-size: var(--font-size);
+}
+
+.container main .game-icons {
+  padding: 30px 10px;
+  width: 70%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  grid-row-gap: 30px;
+  grid-auto-flow: column;
+}
+
+.container main .game-icons .game-icon-widget {
+  -webkit-box-shadow: var(--box-shadow-md);
+          box-shadow: var(--box-shadow-md);
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: var(--border-color);
+}
+
+.container main .game-icons .game-icon-widget:hover {
+  background: #ccc;
+}
+
+.container main .game-icons .game-icon-widget img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    --heading-font-size: 40px;
+    font-size: var(--heading-font-size);
+  }
+  header form {
+    width: 80% !important;
+  }
+  header form label {
+    --font-size: 25px !important;
+  }
+  header form .form-control {
+    height: 40px;
+  }
+  .game-icons {
+    padding: 10px 15px !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    --heading-font-size: 40px;
+    font-size: var(--heading-font-size);
+  }
+  header form {
+    width: 100% !important;
+  }
+  header form label {
+    --font-size: 25px !important;
+  }
+  header form .form-control {
+    height: 40px;
+  }
+  .game-icons {
+    padding: 10px 5px !important;
+    width: 100% !important;
+    grid-gap: 10px !important;
+    grid-row-gap: 30px;
+  }
+  .game-icons .game-icon-widget {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    height: 80px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: transparent !important;
+  }
+  .game-icons .game-icon-widget:hover {
+    background: transparent;
+  }
+  .game-icons .game-icon-widget img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=welcome-screen.css.map */

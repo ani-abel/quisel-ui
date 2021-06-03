@@ -1,0 +1,148 @@
+@import url('./base.css');
+
+.container {
+    width: 100%;
+    padding: 30px 20px;
+
+    header {
+        font-size: var(--heading-font-size);
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+
+            label {
+                --font-size: 30px;
+                font-size: var(--font-size);
+            }
+
+            .form-control {
+                height: 45px;
+            }
+        }
+    }
+
+    main {
+        padding: 10px 0 20px 0;
+
+        h2 {
+            --font-size: 30px;
+            font-size: var(--font-size);
+        }
+
+        .game-icons {
+            padding: 30px 10px;
+            width: 70%;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 20px;
+            grid-row-gap: 30px;
+            grid-auto-flow: column;
+
+            .game-icon-widget {
+                box-shadow: var(--box-shadow-md);
+                height: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--border-color);
+
+                &:hover {
+                    background: #ccc;
+                }
+
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    // main {
+    //     background: violet;
+    // }
+ }
+
+@media (max-width: 768px) { 
+    // main {
+    //     background: green;
+    // }
+
+    header {
+        h1 {
+            --heading-font-size: 40px;
+            font-size: var(--heading-font-size);
+        }
+
+        form {
+            width: 80% !important;
+
+            label {
+                --font-size: 25px !important;
+            }
+
+            .form-control {
+                height: 40px;
+            }
+        }
+    }
+
+    .game-icons {
+        padding: 10px 15px !important;
+        width: 100% !important;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    // main {
+    //     background: yellowgreen;
+    // }
+
+    header {
+        h1 {
+            --heading-font-size: 40px;
+            font-size: var(--heading-font-size);
+        }
+
+        form {
+            width: 100% !important;
+
+            label {
+                --font-size: 25px !important;
+            }
+
+            .form-control {
+                height: 40px;
+            }
+        }
+    }
+
+    .game-icons {
+        padding: 10px 5px !important;
+        width: 100% !important;
+        grid-gap: 10px !important;
+        grid-row-gap: 30px;
+
+        .game-icon-widget {
+            box-shadow: none !important;
+            height: 80px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent !important;
+
+            &:hover {
+                background: transparent;
+            }
+
+            img {
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+}
