@@ -46,11 +46,37 @@
   vertical-align: middle;
 }
 
-.container .game-option-section .game-option .action-caption p:nth-of-type(2) {
-  width: 90%;
+.container .game-option-section .game-option h3 {
   --font-size: 25px;
   font-size: var(--font-size);
-  padding-top: 15px;
+}
+
+nav.bottom-bar {
+  width: 100%;
+  -webkit-box-shadow: 2px 11px 8px -10px rgba(0, 0, 0, 0.1), 2px -11px 8px -10px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 11px 8px -10px rgba(0, 0, 0, 0.1), 2px -11px 8px -10px rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  left: 0;
+  padding: 10px 30px;
+}
+
+nav.bottom-bar ul {
+  grid-gap: 20px;
+  grid-row-gap: 30px;
+  grid-auto-flow: column;
+  display: -ms-grid;
+  display: grid;
+}
+
+nav.bottom-bar ul li {
+  list-style: none;
+}
+
+nav.bottom-bar ul li a {
+  color: #fff;
 }
 
 @media (max-width: 992px) {
