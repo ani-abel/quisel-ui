@@ -150,6 +150,11 @@ html {
     }
 }
 
+.container {
+    width: 100%;
+    padding: 25px 20px;
+}
+
 .hidden-lg-down {
     display: none !important;
 }
@@ -212,6 +217,10 @@ html {
 
 .bg-primary {
     background: var(--primary-color);
+}
+
+.bg-danger {
+    background: var(--danger-color);
 }
 
 .text-accent {
